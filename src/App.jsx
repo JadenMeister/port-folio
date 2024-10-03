@@ -18,7 +18,6 @@ function App() {
         <Info/>
         <Tech/>
         <Project/>
-        <Footer/>
     </>
   )
 }
