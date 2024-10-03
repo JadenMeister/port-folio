@@ -10,16 +10,12 @@ import Navbar from "./components/Navbar.jsx";
 
 function App() {
 
-    return (
-        <div className="App">
-        <Navbar />
-        <Header />
-        <Projects />
-        <Tech />
-        <Info />
-        <Footer />
-        </div>
-    )
+
+  return (
+    <>
+
+    </>
+  )
 }
 
 export default App
