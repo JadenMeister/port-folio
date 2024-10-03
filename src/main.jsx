@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
     <ChakraProvider>
         <Navbar/>
         <Header/>
-        <Box minH="100vh" pt="6rem" pb="10rem">
+        <Box minH="100vh" pb="10rem">
             <App/>
         </Box>
         <Info/>

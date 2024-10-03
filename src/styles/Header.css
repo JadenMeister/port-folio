@@ -6,9 +6,10 @@
     right: 10px;
     max-width: 500px;
     margin: auto;
-    top: 50%;
+    top: 15%;
     transform: translateY(-50%);
     font-family: sans-serif;
+
 }
 .text {
     position: relative;
