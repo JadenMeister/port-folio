@@ -39,7 +39,7 @@ const Header = () => {
 
         Text.play();
 
-        // 컴포넌트가 언마운트될 때 클린업
+
         return () => {
             Text.stop();
             Text.destroy();
@@ -47,9 +47,11 @@ const Header = () => {
     }, []);
 
     return (
-        <div className="container">
+
+        <div className="Header_container">
             <div className="text" data-text=""></div>
         </div>
+
     );
 };
 

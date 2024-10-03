@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Project = () => {
+const Projects = () => {
     return (
         <div>
            프로젝트 
@@ -8,4 +8,4 @@ const Project = () => {
     );
 };
 
-export default Project;
+export default Projects;

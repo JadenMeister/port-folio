@@ -1,0 +1,36 @@
+.Nav_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 1rem;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    width: 100px;
+    height: 100px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    margin-left: 1.25rem;
+    color: #4a5568;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #1a202c;
+}

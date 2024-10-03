@@ -7,18 +7,18 @@ import Header from "./components/Header.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Info from "./components/Info.jsx";
 import Tech from "./components/Tech.jsx";
-import Project from "./components/Project.jsx";
+import Projects from "./components/Projects.jsx";
 
 createRoot(document.getElementById('root')).render(
     <ChakraProvider>
+        <Navbar/>
         <Header/>
-        <Box minH="100vh" pb="10rem">
+        <Box minH="100vh" pt="6rem" pb="10rem">
             <App/>
         </Box>
-        <Navbar/>
         <Info/>
         <Tech/>
-        <Project/>
+        <Projects/>
         <Footer />
     </ChakraProvider>
 )
