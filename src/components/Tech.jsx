@@ -1,9 +1,10 @@
-import React from 'react';
+
+import '../styles/Tech.css';
 
 const Tech = () => {
     return (
-        <div>
-            테크
+        <div className="Tech_container">
+            <h1>Tech</h1>
         </div>
     );
 };

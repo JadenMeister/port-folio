@@ -1,0 +1,10 @@
+.Tech_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px ;
+    padding: 2rem;
+    background-color: #edf2f7;
+}

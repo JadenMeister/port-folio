@@ -1,0 +1,10 @@
+.Info_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #e2e8f0;
+    margin-bottom: 20px;
+}
