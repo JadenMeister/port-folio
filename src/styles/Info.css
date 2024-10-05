@@ -5,6 +5,26 @@
     width: 80%;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #e2e8f0;
     margin-bottom: 20px;
+    border-radius: 15px;
+    border: #2d3748 1px solid;
+
+}
+
+.Info_heading {
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+
+}
+
+.Info_heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #2d3748;
 }

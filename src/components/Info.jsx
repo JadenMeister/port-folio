@@ -1,11 +1,14 @@
-import React from 'react';
 import '../styles/Info.css';
+import { Box, Heading } from "@chakra-ui/react";
 
 const Info = () => {
     return (
-        <div className="Info_container">
-            <h1>Info</h1>
-        </div>
+            <Box className="Info_container">
+                <Heading className="Info_heading" as="h1" fontSize="2xl" fontWeight="bold">
+                    INFO
+                </Heading>
+            </Box>
+
     );
 };
 
