@@ -9,7 +9,7 @@ const InfoBox = ({ title, content, icon, isPrivate = false }) => (
             {icon}
             <Text fontWeight="bold" ml={2}>{title}</Text>
         </Flex>
-        <Text className={isPrivate ? "private-info" : ""} ml={2} position="relative">
+        <Text className={isPrivate ? "private-info" : ""} fontWeight="bold" ml={2} position="relative">
             {content}
         </Text>
     </Box>

@@ -16,9 +16,9 @@ createRoot(document.getElementById('root')).render(
         <Box>
             <App/>
         </Box>
-        <Info/>
-        <Tech/>
-        <Projects/>
+        {/*<Info/>*/}
+        {/*<Tech/>*/}
+        {/*<Projects/>*/}
         <Footer />
     </ChakraProvider>
 )
