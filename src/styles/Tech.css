@@ -49,6 +49,37 @@
 }
 
 .tech_box svg {
-    font-size: 1.2em;
-    color: #4A5568;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.tech_box svg:hover {
+    transform: scale(1.2);
+    color: #3182ce;
+}
+
+.tech-icon svg {
+    transition: color 0.3s ease;
+}
+
+.tech-icon:hover svg {
+    color: var(--icon-color);
+}
+
+.tech-icon::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: var(--icon-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.tech-icon:hover::before {
+    opacity: 0.1;
+}
+

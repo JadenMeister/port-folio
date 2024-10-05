@@ -16,6 +16,8 @@
     position: relative;
     display: inline-block;
     margin-bottom: 2rem;
+    color: #4A5568;
+    text-align: center;
 }
 h2{
     color: #4A5568;
@@ -33,7 +35,7 @@ h2{
     transition: width 0.3s ease;
 }
 
-.Tech_heading:hover::after {
+.Info_heading:hover::after {
     width: 70px;
 }
 
@@ -59,3 +61,25 @@ h2{
     font-size: 1.2em;
     color: #4A5568;
 }
+
+.private-info {
+    color: transparent;
+    background-color: #e2e8f0;
+    transition: color 0.3s ease;
+}
+
+.private-info:hover {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.private-info::selection {
+    color: initial;
+    background-color: yellow;
+}
+
+.info-box:hover .private-info::before {
+    position: absolute;
+    color: #718096;
+    font-size: 0.8em;
+}
+
