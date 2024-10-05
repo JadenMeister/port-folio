@@ -1,12 +1,13 @@
 
 
 .Header_container {
-    position: absolute;
+
     left: 10px;
     right: 10px;
     max-width: 500px;
     margin: auto;
-    top: 15%;
+    top: 25%;
+    margin-top: 10%;
     height: auto;
     transform: translateY(-50%);
     font-family: sans-serif;
