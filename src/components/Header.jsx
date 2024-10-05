@@ -5,6 +5,7 @@ import "../styles/Header.css";
 const Header = () => {
     useEffect(() => {
         const Text = new SceneItem(
+
             {
                 attribute: {
                     "data-text": [
@@ -47,6 +48,7 @@ const Header = () => {
 
     return (
         <div className="Header_container">
+
             <div className="text" data-text=""></div>
         </div>
     );
