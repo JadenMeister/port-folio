@@ -13,12 +13,12 @@ createRoot(document.getElementById('root')).render(
     <ChakraProvider>
         <Navbar/>
         <Header/>
-        <Box pb="10rem" gap="0">
+        <Box>
             <App/>
         </Box>
-        <Info/>
-        <Tech/>
-        <Projects/>
+        {/*<Info/>*/}
+        {/*<Tech/>*/}
+        {/*<Projects/>*/}
         <Footer />
     </ChakraProvider>
 )
