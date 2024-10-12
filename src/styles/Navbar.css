@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 6rem;
     padding: 0 1rem;
@@ -21,6 +21,7 @@
 }
 
 .links {
+    margin-left: 60px;
     display: flex;
     align-items: center;
 }
