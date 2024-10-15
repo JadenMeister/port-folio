@@ -1,8 +1,9 @@
-# React + Vite
+# JADEN's PORTFOLIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+REACT와VITE, Chakra UI를 사용하여 제작한 포트폴리오 사이트입니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Chakra UI의 사용법을 익히고, 반응형, 다크모드, 언어 변환등의 손쉬운 사용법을 익히기 위해 제작하였습니다.
+
+## Features
