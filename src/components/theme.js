@@ -25,6 +25,12 @@ const theme = extendTheme({
                 },
             }),
         },
+        Text: {
+            baseStyle: (props) => ({
+                color: props.colorMode === "dark" ? "black" : "gray.800",
+            }),
+        },
+
     },
 });
 
