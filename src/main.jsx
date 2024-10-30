@@ -15,9 +15,7 @@ import ColorModeToggle from "./components/ColorModeToggle.jsx";
 createRoot(document.getElementById('root')).render(
     <ChakraProvider theme={theme}>
         <Navbar/>
-        <Header/>
         <Box>
-            <ColorModeToggle/>
             <App/>
         </Box>
         {/*<Info/>*/}
