@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "@chakra-ui/react";
+import {Box, useColorMode, Link } from "@chakra-ui/react";
 import '../styles/Navbar.css';
 import ColorModeToggle from "./ColorModeToggle.jsx";
 
@@ -11,6 +11,7 @@ const links = [
 ];
 
 const Navbar = () => {
+    const {colorMode} = useColorMode();
     const handleClick = (e, path) => {
         e.preventDefault();
         const element = document.getElementById(path);
@@ -20,28 +21,34 @@ const Navbar = () => {
     };
 
     return (
-        <div className="Nav_container">
-            <div className="nav-left">
+        <Box className="Nav_container"
+             bg={colorMode === "dark" ? "gray.900" : "white"}
+             color={colorMode === "dark" ? "#D8D8D8" : "gray.800"}>
+
+            <Box className="nav-left">
             <Link href="/" className="logo-container">
                 <img src="/Images/apple-touch-icon.png" alt="logo" className="logo-image" />
             </Link>
-            <div className="links">
+            <Box className="links">
 
                 {links.map((link) => (
                     <Link
                         key={link.id}
                         href={`#${link.path}`}
+                        color={colorMode === "dark" ? "white" : "gray.700"}
+                        fontWeight="600"
                         className="link"
                         onClick={(e) => handleClick(e, link.path)}
                     >
+
                         {link.title}
                     </Link>
                 ))}
 
                 <div className="toggle"> <ColorModeToggle/></div>
-            </div>
-        </div>
-        </div>
+            </Box>
+        </Box>
+        </Box>
     );
 };
 

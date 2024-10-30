@@ -83,4 +83,20 @@ h2{
     color: #718096;
     font-size: 0.8em;
 }
+.toggle-mobile {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .toggle-mobile {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 100;
+    }
+
+    .toggle-desktop {
+        display: none;  /* 모바일에서는 숨김 */
+    }
+}
 

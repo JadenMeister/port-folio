@@ -1,10 +1,12 @@
 import '../styles/Footer.css';
-import { Box, Flex, IconButton, Link, Text, useColorModeValue } from '@chakra-ui/react';
+import { useColorMode, Box, Flex, IconButton, Link, Text, useColorModeValue } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
+    const {colorMode} = useColorMode();
     const bg = useColorModeValue('gray.50', 'gray.900');
     const color = useColorModeValue('gray.900', 'white');
+
 
     return (
         <Box as="footer" bg={bg} color={color} py={6} px={8}>
@@ -19,7 +21,7 @@ const Footer = () => {
                     <IconButton aria-label="Email" icon={<FaEnvelope />} variant="ghost" colorScheme="teal" />
                 </Link>
             </Flex>
-            <Text textAlign="center" fontSize="sm" mt={4}>
+            <Text textAlign="center" fontSize="sm" mt={4} color ={colorMode === "dark" ? "#D8D8D8" : "gray.800"}>
                 © 2024 Jaden CHOI. All rights reserved.
             </Text>
         </Box>
