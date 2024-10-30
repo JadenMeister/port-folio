@@ -96,7 +96,7 @@ h2{
     }
 
     .toggle-desktop {
-        display: none;  /* 모바일에서는 숨김 */
+        display: none;
     }
 }
 

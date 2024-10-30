@@ -25,7 +25,8 @@ const TechIcon = ({ icon: Icon, name, color }) => (
                 }
             }}
         >
-            <Icon size="2em" />
+
+            <Icon size="2em"/>
             <Text fontSize="xs">{name}</Text>
         </VStack>
     </WrapItem>
@@ -86,7 +87,7 @@ const Tech = () => {
             title: "Cloud Services",
             items: [
                 { component: SiNaver, name: "NAVER Cloud", color: "#03C75A" },
-                { component: FaCloud, name: "KT Cloud", color: "#000000" }, // KT Cloud의 정확한 색상이 없어 임시로 검정색 사용
+                { component: FaCloud, name: "KT Cloud", color: "#000000" },
             ]
         },
     ];
