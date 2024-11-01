@@ -20,7 +20,6 @@ const Projects = () => {
                     Project
                 </Heading>
             </Center>
-
         </VStack>
     );
 };
