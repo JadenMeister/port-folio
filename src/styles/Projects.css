@@ -84,9 +84,63 @@ h2{
     color: #718096;
     font-size: 0.8em;
 }
-.toggle-mobile {
-    display: none;
+
+.project_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
 }
+
+.project_slide {
+    padding: 10px;
+}
+
+.project_box {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    margin: 10px;
+    overflow: hidden;  /* 이미지가 박스를 벗어나지 않도록 */
+}
+
+.project_box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project_image {
+    width: 40%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 4px;  /* 이미지 모서리 둥글게 */
+}
+
+.project_info {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.slick-slide {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.slick-slider {
+    width: 100%;
+}
+
+.content_container {
+    width: 100%;
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .toggle-mobile {
         display: block;
