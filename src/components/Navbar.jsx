@@ -8,6 +8,7 @@ const links = [
     { id: 1, path: 'info', title: 'Info' },
     { id: 2, path: 'tech', title: 'Tech' },
     { id: 3, path: 'projects', title: 'Projects' },
+    { id: 4, path: 'education', title: 'Education & Certifications' },
 ];
 
 const Navbar = () => {
