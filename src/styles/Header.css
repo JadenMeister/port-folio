@@ -7,8 +7,7 @@
     max-width: 500px;
     margin: auto;
     top: 25%;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-top: 15%;
     height: auto;
     transform: translateY(-50%);
     font-family: sans-serif;
@@ -17,7 +16,7 @@
 .text {
     position: relative;
     margin: 5px auto;
-    margin-top: 10px;
+
     text-align: center;
     font-size: 30px;
     font-weight: bold;

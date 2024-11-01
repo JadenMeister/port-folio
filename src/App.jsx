@@ -4,6 +4,7 @@ import Header from "./components/Header.jsx";
 import Info from './components/Info';
 import Projects from './components/Projects';
 import Tech from './components/Tech';
+import Edu from './components/Edu.jsx';
 import ColorModeToggle from "./components/ColorModeToggle.jsx";
 const App = () => {
     return (
@@ -24,6 +25,9 @@ const App = () => {
                 </section>
                 <section id="projects">
                     <Projects/>
+                </section>
+                <section id="education">
+                    <Edu/>
                 </section>
             </main>
         </div>
