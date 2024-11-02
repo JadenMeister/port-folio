@@ -1,5 +1,4 @@
 
-
 .Header_container {
 
     left: 10px;
@@ -24,4 +23,11 @@
 }
 .text[data-text]:before {
     content: attr(data-text);
+}
+
+@media screen and (max-height: 768px) {
+    .Header_container {
+        top: 10%;
+        margin-top: 10%;
+    }
 }
