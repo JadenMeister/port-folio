@@ -103,7 +103,7 @@ h2{
     background-color: #f8f9fa;
     transition: all 0.3s ease;
     margin: 10px;
-    overflow: hidden;  /* 이미지가 박스를 벗어나지 않도록 */
+    overflow: hidden;
 }
 
 .project_box:hover {
@@ -116,7 +116,7 @@ h2{
     height: auto;
     max-height: 500px;
     object-fit: cover;
-    border-radius: 4px;  /* 이미지 모서리 둥글게 */
+    border-radius: 4px;
 }
 
 .project_info {
@@ -135,7 +135,7 @@ h2{
 
 .content_container {
     width: 100%;
-    max-width: 1200px; /* 최대 너비 설정 */
+    max-width: 1200px;
     margin: 0 auto;
 }
 

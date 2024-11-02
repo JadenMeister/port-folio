@@ -10,16 +10,15 @@ const theme = extendTheme({
     styles: {
         global: (props) => ({
 
-
             body: {
                 color: props.colorMode === "dark" ? "#D8D8D8" : "gray.800",
                 bg: props.colorMode === "dark" ? "gray.900" : "white",
             },
-            "h1,h2,h3, h4, h5, h6, p, span, div": {
+            "h1, h2, h3, h4, h5, h6, p, span, div": {
                 color: props.colorMode === "dark" ? "black" : "gray.900",
             },
             ".text::before": {
-                color: props.colorMode === "dark" ? "gray" : "gray.800",
+                color: props.colorMode === "dark" ? "black" : "gray.800",
             }
 
         }),
