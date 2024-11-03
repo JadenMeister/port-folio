@@ -70,7 +70,6 @@ const Tech = () => {
             title: "Databases",
             items: [
                 { component: SiMysql, name: "MySQL", color: "#4479A1" },
-                { component: SiMongodb, name: "MongoDB", color: "#47A248" },
             ]
         },
         {

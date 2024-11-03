@@ -46,18 +46,6 @@ h2{
     width: 100%;
 }
 
-.Project-box {
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
-    background-color: #f8f9fa;
-    transition: all 0.3s ease;
-}
-
-.Project-box:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-}
 
 .Project-box svg {
     font-size: 1.2em;
@@ -85,12 +73,7 @@ h2{
     font-size: 0.8em;
 }
 
-.project_image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-height: 500px;
-}
+
 
 .project_slide {
     padding: 10px;
@@ -112,11 +95,16 @@ h2{
 }
 
 .project_image {
-    width: 40%;
+    width: 100%;
     height: auto;
-    max-height: 500px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.project_image:hover {
+    transform: scale(1.02);
 }
 
 .project_info {
@@ -149,9 +137,63 @@ h2{
         right: 1rem;
         z-index: 100;
     }
+    .project_box {
+        padding: 0.5rem;
+    }
+    .project_image {
+          max-height: 300px;
+      }
 
     .toggle-desktop {
         display: none;
+    }
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+/* 모달 커스텀 스타일 */
+.chakra-modal__content {
+    max-width: 90vw !important;
+    margin: 20px;
+    transition: background-color 0.2s ease-in-out !important;
+}
+[data-theme="dark"] .chakra-modal__content {
+    background-color: var(--chakra-colors-gray-800) !important;
+    border-color: var(--chakra-colors-gray-600) !important;
+}
+
+[data-theme="dark"] .project_box {
+    background-color: var(--chakra-colors-gray-800);
+    border-color: var(--chakra-colors-gray-600);
+}
+
+[data-theme="dark"] .project_info {
+    color: var(--chakra-colors-white);
+}
+
+@media screen and (min-width: 768px) {
+    .chakra-modal__content {
+        max-width: 800px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .chakra-modal__content {
+        max-width: 800px !important;
     }
 }
 

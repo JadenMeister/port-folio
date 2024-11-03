@@ -18,7 +18,7 @@ const theme = extendTheme({
                 color: props.colorMode === "dark" ? "black" : "gray.900",
             },
             ".text::before": {
-                color: props.colorMode === "dark" ? "black" : "gray.800",
+                color: props.colorMode === "dark" ? "white" : "gray.800",
             }
 
         }),

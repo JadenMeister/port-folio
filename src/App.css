@@ -42,3 +42,29 @@
 .read-the-docs {
   color: #888;
 }
+.toggle-mobile {
+  display: none;
+}
+
+.toggle-desktop {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-mobile {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+  }
+
+  .toggle-desktop {
+    display: none;
+  }
+}
