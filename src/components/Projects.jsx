@@ -36,6 +36,11 @@ const Projects = () => {
     const [selectedModal, setSelectedModal] = useState(null);
     const [currentSlide, setCurrentSlide] = useState(0);
 
+
+
+
+
+
     // 메인 슬라이더
     const mainSliderSettings = {
         dots: true,
@@ -74,8 +79,11 @@ const Projects = () => {
                 "/Images/projects/cardano_project3.png"
             ],
             thumbnail: "/Images/projects/cardano_project.png",
-            details: "[2인 프로젝트] 건양대학교 소재 한국 카르다노 블록체인 연구소 소속으로 국내 카르다노 ADA 사용자들을 위한 커뮤니티 사이트 입니다. </br>" +
-                "KT클라우드를 사용해 서버를 운영중이며 Next.js와 Node.js를 사용해 프론트엔드와 백엔드를 구축하였습니다. Redux를 이용해 그래프를 적용하였고 해당 코인마켓의 API를 사용해 실시간 가격 정보를 제공하고 있습니다.",
+            details:   [
+                "[2인 프로젝트] 건양대학교 소재 한국 카르다노 블록체인 연구소 소속으로 국내 카르다노 ADA 사용자들을 위한 커뮤니티 사이트 입니다.",
+                "KT클라우드를 사용해 서버를 운영중이며 Next.js와 Node.js를 사용해 프론트엔드와 백엔드를 구축하였습니다.",
+                "Redux를 이용해 그래프를 적용하였고 해당 코인마켓의 API를 사용해 실시간 가격 정보를 제공하고 있습니다."
+            ],
             skills: [
                 { icon: <FaReact size={20} />, name: "React" },
                 { icon: <SiNextdotjs size={20} />, name: "Next.js" },
@@ -186,6 +194,7 @@ const Projects = () => {
                 size="4xl"
                 isCentered
             >
+
                 <ModalOverlay />
                 <ModalContent bg={modalBg} borderColor={borderColor}>
                     <ModalHeader color={textColor}>{selectedModal?.title}</ModalHeader>
@@ -208,6 +217,7 @@ const Projects = () => {
                         <Text fontSize="lg" mb={4} color={textColor} mt={8}>
                             {selectedModal?.details}
                         </Text>
+
                         <Box mb={4}>
                             <Text fontWeight="bold" fontSize="lg" mb={2} color={textColor}>
                                 주요 기능
