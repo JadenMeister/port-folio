@@ -119,7 +119,7 @@ const Projects = () => {
                         className="project_slide"
                         cursor="pointer"
                     >
-                        <Box className="project_box" onClick={() => setSelectedModal(project)}>  {/* 여기에 onClick 추가 */}
+                        <Box className="project_box" onClick={() => setSelectedModal(project)}>
                             <Flex
                                 direction={{ base: "column", md: "row" }}
                                 gap={6}
