@@ -165,7 +165,7 @@
 
 [data-theme="dark"] .slick-prev:before,
 [data-theme="dark"] .slick-next:before {
-    color: white;
+    color: black;
 }
 
 /* 반응형 스타일 */
