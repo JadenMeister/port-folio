@@ -11,7 +11,7 @@ const App = () => {
         <div className="App">
             <Navbar />
             <main>
-                <section id ="/">
+                <section id="/">
                     <Header/>
                 </section>
                 <section id="info" style={{position: "relative"}}>
@@ -20,15 +20,16 @@ const App = () => {
                     </div>
                     <Info/>
                 </section>
+                <section id="education">
+                    <Edu/>
+                </section>
                 <section id="tech">
                     <Tech/>
                 </section>
                 <section id="projects">
                     <Projects/>
                 </section>
-                <section id="education">
-                    <Edu/>
-                </section>
+
             </main>
         </div>
     );
