@@ -5,7 +5,7 @@ import './index.css'
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Navbar from "./components/Navbar.jsx";
-import theme from "./components/theme.js";
+import theme from "./components/Theme.js";
 import { LanguageProvider } from './components/LanguageSwitchToggle.jsx';
 
 

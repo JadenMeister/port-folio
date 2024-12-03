@@ -1,8 +1,12 @@
 import React from 'react';
 import '../styles/Info.css';
-import { Box, Heading, SimpleGrid, Text, Flex, VStack, Center, Switch, FormLabel, } from "@chakra-ui/react";
+import {useColorModeValue, Box, Heading, SimpleGrid, Text, Flex, VStack, Center, Switch, FormLabel, } from "@chakra-ui/react";
 import {FaUser,  FaEnvelope, FaUniversity, FaGraduationCap, FaMapMarkerAlt, FaIdCard} from "react-icons/fa";
 import { useLanguage } from './LanguageSwitchToggle.jsx';
+
+
+
+
 const InfoBox = ({ title, content, icon, isPrivate = false }) => (
     <Box className="info-box" position="relative">
         <Flex alignItems="center" mb={2}>
@@ -15,7 +19,11 @@ const InfoBox = ({ title, content, icon, isPrivate = false }) => (
     </Box>
 );
 
+
+
 const Info = () => {
+    const labelColor = useColorModeValue("gray.800", "white");
+
 
     const { isEnglish, setIsEnglish } = useLanguage();
 
@@ -48,8 +56,9 @@ const Info = () => {
                 </Heading>
 
                 <Flex justifyContent="flex-end">
-                    <FormLabel htmlFor="language_switch" mb="0" mr={2}>
+                    <FormLabel htmlFor="language_switch" mb="0" mr={2} color={labelColor}>
                         {isEnglish ? "EN" : "KO"}
+
                     </FormLabel>
                     <Switch
                         id="language_switch"

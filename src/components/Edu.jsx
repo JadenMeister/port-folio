@@ -70,7 +70,7 @@ const Edus = () => {
             },
             {
                 id: 3,
-                title: "[Award 2022 1st Konyang University Academic Festival of Cybersecurity (3rd place) ",
+                title: "[Award] 2022 1st Konyang University Academic Festival of Cybersecurity (3rd place) ",
                 description: "Hacking Techniques in Daily Life Presented under the theme of 'Social Engineering Techniques: Scam'",
                 date: "2022",
             },

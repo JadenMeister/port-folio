@@ -35,9 +35,7 @@ const Projects = () => {
 
     const [selectedModal, setSelectedModal] = useState(null);
     const [currentSlide, setCurrentSlide] = useState(0);
-
-
-
+    
 
 
 
