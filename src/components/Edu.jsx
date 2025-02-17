@@ -35,7 +35,7 @@ const Edus = () => {
       {
         id: 4,
         title: "[교육] NAVER CLOUD ACADEMY",
-        description: "2024 하반기 네이버클라우드 아카데미 교육 수료 예정",
+        description: "2024 하반기 네이버클라우드 아카데미 교육 수료",
         date: "2024"
       },
       {
