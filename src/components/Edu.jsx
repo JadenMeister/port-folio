@@ -42,9 +42,21 @@ const Edus = () => {
             },
             {
                 id: 5,
+                title: "[자격] NAVER CLOUD PLATFORM Certified Associate",
+                description: "네이버클라우드 플랫폼 Associate Level",
+                date: "2024",
+            },
+            {
+                id: 6,
                 title: "[교육] KISA 민간 SW개발보안 대학생 교육 ",
                 description: " KISA 2023년 민간 SW개발보안 대학생 교육(입문과정)",
                 date: "2023",
+            },
+            {
+                id: 7,
+                title: "[자격] ISO 27001 정보보호 관리체계 인증심사원",
+                description: "ISO 27001 정보보호 관리체계 인증심사원(보)",
+                date: "2024",
             },
 
         ],
