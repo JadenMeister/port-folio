@@ -52,7 +52,7 @@ const Edus = () => {
       },
       {
         id: 7,
-        title: "[자격] ISO 27001 정보보호 관리체계 인증심사원",
+        title: "[국제자격] ISO 27001:2022 정보보호 관리체계 인증심사원",
         description: "ISO 27001 정보보호 관리체계 인증심사원(보)",
         date: "2024"
       }
@@ -94,11 +94,25 @@ const Edus = () => {
       },
       {
         id: 5,
+        title: "[Certification] NAVER CLOUD PLATFORM Certified Associate",
+        description: "NAVER CLOUD Associate Level (NCA)",
+        date: "2024"
+      },
+      {
+        id: 6,
         title:
           "[Education] KISA Private SW Development Security College Student Education",
         description:
           " KISA 2023 Private SW Development Security College Student Education (Introductory Course)",
         date: "2023"
+      },
+      {
+        id: 7,
+        title:
+          "[International Certification] ISO 27001:2022 Certified in ISO 27001:2022 and qualified as a Provisional Auditor.",
+        description:
+          "ISO 27001 Information Security Management Agency Certification Auditor(Associate Auditor) from [Bureau Veritas]",
+        date: "2024"
       }
     ]
   };
