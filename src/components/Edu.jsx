@@ -109,7 +109,7 @@ const Edus = () => {
       {
         id: 7,
         title:
-          "[International Certification] ISO 27001:2022 Certified in ISO 27001:2022 and qualified as a Provisional Auditor.",
+          "[International Certification] ISO 27001:2022 Certified qualified as a Provisional Auditor.",
         description:
           "ISO 27001 Information Security Management Agency Certification Auditor(Associate Auditor) from [Bureau Veritas]",
         date: "2024"
