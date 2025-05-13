@@ -1,13 +1,14 @@
 import "../styles/Footer.css";
 import {
-  useColorMode,
+
   Box,
   Flex,
   IconButton,
   Link,
   Text,
-  useColorModeValue
+
 } from "@chakra-ui/react";
+import { useColorMode, useColorModeValue } from "@chakra-ui/system";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {

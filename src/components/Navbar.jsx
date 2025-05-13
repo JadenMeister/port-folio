@@ -1,5 +1,6 @@
 import React from 'react';
-import {Box, useColorMode, Link } from "@chakra-ui/react";
+import {Box, Link } from "@chakra-ui/react";
+import { useColorMode } from "@chakra-ui/system";
 import '../styles/Navbar.css';
 import ColorModeToggle from "./ColorModeToggle.jsx";
 

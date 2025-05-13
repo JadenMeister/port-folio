@@ -2,23 +2,31 @@ import '../styles/Projects.css'
 import {
     Box,
     Heading,
-    Modal,
     VStack,
     Center,
     Image,
     Text,
     Flex,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalCloseButton,
-    ModalBody,
     Button,
     Link,
-    useColorMode,
-    useColorModeValue,
+    // useColorMode,
+    // useColorModeValue,
     IconButton,
+    CloseButton,
+    Dialog,
+    // DialogTrigger,
+    DialogContent,
+    // DialogHeader,
+    // DialogBody,
+    DialogCloseTrigger,
+    // DialogBackdrop,
+    // DialogPositioner,
+    // Portal,
+
+    DialogTitle
 } from "@chakra-ui/react";
+import { useColorMode, useColorModeValue } from "@chakra-ui/system";
+
 import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -27,16 +35,17 @@ import {FaReact, FaNodeJs, FaGithub,FaGlobe } from "react-icons/fa";
 import {SiMysql, SiExpress, SiNextdotjs, SiRedux,} from "react-icons/si";
 import React from "react";
 
+
 const Projects = () => {
+
+    const [selectedModal, setSelectedModal] = useState(null);
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+
     const { colorMode } = useColorMode();
     const modalBg = useColorModeValue('white', 'gray.800');
     const textColor = useColorModeValue('gray.800', 'white');
     const borderColor = useColorModeValue('gray.200', 'gray.600');
-
-    const [selectedModal, setSelectedModal] = useState(null);
-    const [currentSlide, setCurrentSlide] = useState(0);
-    
-
 
 
     // 메인 슬라이더
@@ -186,18 +195,20 @@ const Projects = () => {
             </VStack>
 
             {/* 모달 */}
-            <Modal
-                isOpen={selectedModal !== null}
+            <Dialog
+                open={selectedModal !== null}
                 onClose={() => setSelectedModal(null)}
                 size="4xl"
                 isCentered
             >
 
-                <ModalOverlay />
-                <ModalContent bg={modalBg} borderColor={borderColor}>
-                    <ModalHeader color={textColor}>{selectedModal?.title}</ModalHeader>
-                    <ModalCloseButton color={textColor}/>
-                    <ModalBody pb={6}>
+                <Dialog />
+                <DialogContent bg={modalBg} borderColor={borderColor}>
+                    <DialogTitle color={textColor}>{selectedModal?.title}</DialogTitle>
+                    <DialogCloseTrigger>
+                        <CloseButton/>
+                    </DialogCloseTrigger>
+                    <DialogContent pb={6}>
                         <div className="modal-slider-container">
                             <Slider {...modalSettings}>
                                 {selectedModal?.images?.map((img, index) => (
@@ -262,9 +273,9 @@ const Projects = () => {
                             )}
                             {selectedModal?.github}
                         </Flex>
-                    </ModalBody>
-                </ModalContent>
-            </Modal>
+                    </DialogContent>
+                </DialogContent>
+            </Dialog>
         </>
     );
 };

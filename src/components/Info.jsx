@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Info.css';
-import {useColorModeValue, Box, Heading, SimpleGrid, Text, Flex, VStack, Center, Switch, FormLabel, } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Text, Flex, VStack, Center, Switch,  } from "@chakra-ui/react";
+import { useColorModeValue } from "@chakra-ui/system";
 import {FaUser,  FaEnvelope, FaUniversity, FaGraduationCap, FaMapMarkerAlt, FaIdCard} from "react-icons/fa";
 import { useLanguage } from './LanguageSwitchToggle.jsx';
 

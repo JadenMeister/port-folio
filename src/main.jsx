@@ -1,25 +1,25 @@
-import {ChakraProvider,  Box} from "@chakra-ui/react";
+import { ChakraProvider,Box } from "@chakra-ui/react";
+import { ThemeProvider } from "next-themes";
+import { system } from "./components/Theme.js";
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import Footer from "./components/Footer.jsx";
-import Header from "./components/Header.jsx";
+
 import Navbar from "./components/Navbar.jsx";
-import theme from "./components/Theme.js";
 import { LanguageProvider } from './components/LanguageSwitchToggle.jsx';
 
-
 createRoot(document.getElementById('root')).render(
-    <ChakraProvider theme={theme}>
+    <ThemeProvider attribute="class" defaultTheme="light">
+      <ChakraProvider value={system}>
         <LanguageProvider>
-        <Navbar/>
-        <Box>
-            <App/>
-        </Box>
-        {/*<Info/>*/}
-        {/*<Tech/>*/}
-        {/*<Projects/>*/}
-        <Footer />
+          <Navbar />
+          <Box>
+            <App />
+          </Box>
+          <Footer />
         </LanguageProvider>
-    </ChakraProvider>
-)
+      </ChakraProvider>
+    </ThemeProvider>
+);
+
