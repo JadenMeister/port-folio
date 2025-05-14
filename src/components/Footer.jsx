@@ -52,7 +52,7 @@ const Footer = () => {
         mt={4}
         color={colorMode === "dark" ? "#D8D8D8" : "gray.800"}
       >
-        © 2024 Jaden CHOI. All rights reserved.
+        © 2024-2025 Jaden CHOI. All rights reserved.
       </Text>
     </Box>
   );
