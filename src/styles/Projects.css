@@ -36,8 +36,9 @@
 .project_box {
     padding: 1rem;
     border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #d2c9c9;
     background-color: #f8f9fa;
+
     transition: all 0.3s ease;
     margin: 10px;
 
