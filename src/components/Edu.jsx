@@ -6,6 +6,8 @@ import { useLanguage } from "./LanguageSwitchToggle.jsx";
 const Edus = () => {
   const { isEnglish, setIsEnglish } = useLanguage();
 
+
+
   const eduData = {
     ko: [
       {
@@ -135,6 +137,9 @@ const Edus = () => {
             _hover={{
               transform: "translateY(-5px)",
               boxShadow: "md"
+            }}
+            onClick={() => {
+
             }}
             transition="all 0.3s ease"
           >

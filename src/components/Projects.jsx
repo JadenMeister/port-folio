@@ -100,7 +100,7 @@ const Projects = () => {
                 { icon: <SiRedux size={20} />, name: "Redux" }
             ],
             github: (
-                <Link href="https://github.com/ErrorgodxD" isExternal>
+                <Link href="https://github.com/JadenMeister" isExternal>
                     <IconButton
                         aria-label="Github"
                         icon={<FaGithub />}
@@ -109,7 +109,7 @@ const Projects = () => {
                     />
                 </Link>
             ),
-            site: "cardano.kr",
+
             features: [
                 "블록체인 정보 제공",
                 "실시간 가격 정보",
