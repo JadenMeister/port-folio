@@ -23,8 +23,9 @@ import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {FaReact, FaNodeJs, FaGithub,FaGlobe } from "react-icons/fa";
-import {SiMysql, SiExpress, SiNextdotjs, SiRedux,} from "react-icons/si";
+import {FaReact, FaNodeJs, FaGithub,FaGlobe,FaAws } from "react-icons/fa";
+import {SiMysql, SiExpress, SiNextdotjs, SiRedux,SiVite, SiTailwindcss} from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
 import React from "react";
 
 const Projects = () => {
@@ -88,10 +89,10 @@ const Projects = () => {
                 { icon: <FaNodeJs size={20} />, name: "Node.js" },
                 { icon: <SiExpress size={20} />, name: "Express" },
                 { icon: <SiMysql size={20} />, name: "MySQL" },
-                { icon: <SiRedux size={20} />, name: "Redux" }
+                { icon: <SiRedux size={20} />, name: "Redux-toolkit" }
             ],
             github: (
-                <Link href="https://github.com/ErrorgodxD" isExternal>
+                <Link href="https://github.com/JadenMeister" isExternal>
                     <IconButton
                         aria-label="Github"
                         icon={<FaGithub />}
@@ -106,6 +107,87 @@ const Projects = () => {
                 "실시간 가격 정보",
                 "커뮤니티 기능",
                 "기술 문서 제공"
+            ]
+        },
+        {
+            id: 1,
+            title: "[오픈 생태계 기여 : NPM ] Oauth-btn npm ",
+            description: "Oauth2.0 인증을 위한 버튼을 제작한 프로젝트입니다. 다양한 플랫폼의 Oauth2.0 인증을 지원합니다.",
+            images: [
+                "Images/oauth/oauth-ex1.png",
+            ],
+            thumbnail: "Images/oauth/oauth-ex1.png",
+            details: [
+                "[1인 배포]",
+                "Oauth2.0 인증을 위한 버튼을 제작한 프로젝트입니다. 반복되는 소셜 로그인 버튼 제작 작업에서 효율성을 고려해 npm 패키지로 배포하였습니다.",
+                ""
+            ],
+            skills: [
+                { icon: <FaReact size={20} />, name: "React" },
+                { icon: <SiVite size={20} />, name: "VITE" },
+                { icon: <SiTailwindcss size={20} />, name: "TailwindCSS" },
+            ],
+            github: (
+                <Link href="https://github.com/JadenMeister/npm-oauth-btn" isExternal>
+                    <IconButton
+                        aria-label="Github"
+                        icon={<FaGithub />}
+                        variant="ghost"
+                        colorScheme={colorMode === 'dark' ? 'whiteAlpha' : 'gray'}
+
+                    />
+                </Link>
+            ),
+            site: "https://www.npmjs.com/package/oauth-btn",
+            features: [
+                "소셜로그인 버튼 간편화",
+                "환경변수 설정",
+                "Github, Naver, Google, Kakao 지원",
+            ]
+        },
+        {
+            id: 0,
+            title: "[진행중] 개인 작업물 : PHOTODUMP",
+            description: "세계 각국 여행지를 다니며 사진으로 지도를 채워 나가는 여행기록 웹서비스 입니다.",
+            images: [
+                "Images/photodump/main.png",
+                "Images/photodump/map.png",
+                "Images/photodump/login.png"
+            ],
+            thumbnail: "Images/photodump/main.png",
+            details: [
+                "[1인 프로젝트]",
+                "여행지 사진을 업로드하고, 여행지를 기록할 수 있는 웹서비스입니다. 사용자가 업로드한 사진으로 지도를 채워나가며 여행기록을 시각적으로 표현합니다.",
+                `"여행" 이라는 도메인을 가진 웹서비스를 만들고 싶어 시작한 프로젝트입니다.`
+            ],
+            skills: [
+                { icon: <FaReact size={20} />, name: "React" },
+                { icon: <SiVite size={20} />, name: "VITE" },
+                {icon: <FaNodeJs size={20} />, name: "Node.js" },
+                { icon: <SiExpress size={20} />, name: "express" },
+                { icon: <SiMysql size={20}/>, name: "MySQL" },
+                {icon: <SiTailwindcss size={20}/>, name: "TailwindCSS" },
+                { icon: <TbBrandThreejs size={20}/>, name:"three.js" },
+                { icon: <FaAws size={20}/>, name:"aws S3" },
+
+            ],
+            github: (
+                <Link href="https://github.com/JadenMeister/photo-dump" isExternal>
+                    <IconButton
+                        aria-label="Github"
+                        icon={<FaGithub />}
+                        variant="ghost"
+                        colorScheme={colorMode === 'dark' ? 'whiteAlpha' : 'gray'}
+                    />
+                </Link>
+            ),
+            site: "",
+            features: [
+                "사진 업로드",
+                "로그인 기능",
+                "bycrypt 암호화 알고리즘 적용",
+                "AWS S3 사용",
+                "ThreeJS를 이용한 3D 모델 구현",
             ]
         }
     ];
@@ -140,6 +222,9 @@ const Projects = () => {
                                         e.stopPropagation();  // 이벤트 버블링 방지
                                     }}
                                 >
+                                    {project.images.length > 1 ? (
+
+
                                     <Slider {...mainSliderSettings}>
                                         {project.images.map((img, index) => (
                                             <div key={index}>
@@ -148,10 +233,23 @@ const Projects = () => {
                                                     alt={`${project.title} ${index + 1}`}
                                                     className="project_image"
                                                     borderRadius="md"
+
                                                 />
                                             </div>
                                         ))}
                                     </Slider>
+                                    ) :(
+                                        <Image
+                                            src={project.images[0]}
+                                            alt={`${project.title} 1`}
+                                            className="project_image"
+                                            borderRadius="md"
+                                            maxW="600px"
+                                            h="300"
+                                            m="0 auto"
+                                            objectFit="contain"
+                                        />
+                                    )}
                                 </Box>
                                 <Box
                                     flex={{ base: "1", md: "0.6" }}
