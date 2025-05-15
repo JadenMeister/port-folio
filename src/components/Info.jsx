@@ -39,7 +39,7 @@ const Info = () => {
         en:[
             { title: "Name", content: "CHOI Jeongmin/Jaden", icon: <FaUser />, isPrivate: false },
             { title: "Position", content: "Frontend developer", icon: <FaIdCard />, isPrivate: false },
-            { title: "Email", content: "error10901@gmail.com", icon: <FaEnvelope />, isPrivate: true },
+            { title: "Email", content: "jadenmeister1337@gmail.com", icon: <FaEnvelope />, isPrivate: true },
             { title: "University", content: "Konyang university", icon: <FaUniversity />, isPrivate: false },
             { title: "Department", content: "Cyber Security Engineering", icon: <FaGraduationCap />, isPrivate: false },
             { title: "Location", content: "Daejeon, South Korea", icon: <FaMapMarkerAlt />, isPrivate: false },
