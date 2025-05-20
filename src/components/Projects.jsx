@@ -146,7 +146,7 @@ const Projects = () => {
             ]
         },
         {
-            id: 0,
+            id: 2,
             title: "[진행중] 개인 작업물 : PHOTODUMP",
             description: "세계 각국 여행지를 다니며 사진으로 지도를 채워 나가는 여행기록 웹서비스 입니다.",
             images: [
@@ -188,6 +188,46 @@ const Projects = () => {
                 "bycrypt 암호화 알고리즘 적용",
                 "AWS S3 사용",
                 "ThreeJS를 이용한 3D 모델 구현",
+            ]
+        },
+        {
+            id: 3,
+            title: "[진행중] 팀 작업물 : Journee",
+            description: "국내 여행지를 소개하고 국내여행을 독려하는 웹 서비스 입니다.",
+            images: [
+                "Images/travel/travelMain.png",
+                "Images/travel/travel2.png",
+                "Images/travel/travelMap.png"
+            ],
+            thumbnail: "Images/travel/travelMain.png",
+            details: [
+                "[6인 프로젝트: 디자이너: 2, 프론트: 3, 백엔드:1]",
+                "국내 여행지를 추천하고 여행 일정을 계획할 수 있는 웹 서비스 입니다.",
+                `"여행" 이라는 공통 도메인을 찾아 시작한 프로젝트입니다.`
+            ],
+            skills: [
+                { icon: <FaReact size={20} />, name: "React" },
+                { icon: <SiVite size={20} />, name: "VITE" },
+                {icon: <SiTailwindcss size={20}/>, name: "TailwindCSS" },
+
+
+            ],
+            github: (
+              <Link href="https://github.com/ShiftLeftt/travelProduct" isExternal>
+                  <IconButton
+                    aria-label="Github"
+                    icon={<FaGithub />}
+                    variant="ghost"
+                    colorScheme={colorMode === 'dark' ? 'whiteAlpha' : 'gray'}
+                  />
+              </Link>
+            ),
+            site: "",
+            features: [
+              "로그인, 회원가입 기능",
+                "카카오맵 API 연동",
+              "게시판 CRUD 기능",
+
             ]
         }
     ];
